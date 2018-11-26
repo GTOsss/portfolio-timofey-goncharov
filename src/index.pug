@@ -4,8 +4,8 @@ include pug/mixins/checkbox
 
 append vars
 	-
-		var title = 'Тестовое задание';
-		var description = 'Демонстрацию навыков верстки и javascript';
+		var title = 'Портфолио';
+		var description = 'Портфолио front-end разработчика. Автор Тимофей Гончаров.';
 		meta.themeColor = '#b4b4b4';
 
 block content
@@ -58,3 +58,12 @@ block content
 					| Мой уровень владения <br/> Java Script
 				.level-js-counter__count#jsLevelCount
 					| 0
+	section.portfolio
+		.paper-card-info-portfolio
+			h1.paper-card-info-portfolio__title
+				| Портфолио
+			p.paper-card-info-portfolio__paragraph
+				|	Свою карьеру front-end разработчика я начал в январе 2016 года. На протяжении последних лет
+				| я сталкивался с разными задачами, связанными с фронт-ендом, мне приходилось, как
+				| разрабатывать свои проекты с нуля, так и работать в команде. Ниже я приведу список самых
+				| интересных задач и проектов, которые были разработаны мной с нуля.

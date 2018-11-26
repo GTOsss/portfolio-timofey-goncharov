@@ -52,9 +52,12 @@
 	},
 	"dependencies": {
 		"@babel/polyfill": "7.0.0",
+		"foundation-sites": "6.5.1",
+		"gsap": "2.0.2",
 		"jquery": "3.3.1",
 		"ninelines-ua-parser": "1.1.6",
 		"normalize-css": "2.3.1",
-		"svg4everybody": "2.1.9"
+		"svg4everybody": "2.1.9",
+		"typed.js": "2.0.9"
 	}
 }
