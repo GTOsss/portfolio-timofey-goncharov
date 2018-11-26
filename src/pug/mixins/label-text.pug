@@ -1,0 +1,11 @@
+mixin labelText(params)
+	-
+		var defaultParams = {
+			label: '',
+			content: ''
+		};
+		var config = Object.assign({}, defaultParams, params);
+	.label-with-text
+		strong
+			| #{config.label}&nbsp;
+		block

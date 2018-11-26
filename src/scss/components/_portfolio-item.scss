@@ -1,0 +1,18 @@
+@import '../mixins/paper-card';
+
+.portfolio-item {
+	@include paper-card;
+
+	align-items: center;
+	flex-direction: column;
+	margin-top: 47px;
+	padding: 10px 17px;
+	font-family: $font-family-roboto;
+	font-size: 14px;
+
+	&__title {
+		font-size: 24px;
+		margin-top: 10px;
+	}
+}
+

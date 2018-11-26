@@ -1,6 +1,7 @@
 extends pug/base
 include pug/mixins/input
 include pug/mixins/checkbox
+include pug/mixins/portfolio-item
 
 append vars
 	-
@@ -23,6 +24,16 @@ block content
 			'jquery',
 			'git',
 			'git-flow'
+		];
+		var portfolioItems = [
+			{
+				title: 'Приложение для социальной сети vk',
+				goal: 'Реализовать приложения для поиска людей по совместимости (общие группы, предпочтения музыка и тд). Необходимо было использовать api социальной сети для сбора необходимой информации и осуществления поиска.',
+				myWork: 'Имея опыт работы в разработки интерфейсов и не имея шаблона и дизайна, я выбрал React и разработал SPA приложение. Вместо back-end использовался firebase.',
+				technology: 'JavaScript, HTML, scss, webpack, React, React-redux (thunk), react-router, redux-form, axios, firebase',
+				result: 'Было разработано оптимизированное приложение с красивым и понятным интерфейсом',
+				images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ]
+			}
 		];
 	section.section-info
 		.paper-card-info
@@ -67,3 +78,5 @@ block content
 				| я сталкивался с разными задачами, связанными с фронт-ендом, мне приходилось, как
 				| разрабатывать свои проекты с нуля, так и работать в команде. Ниже я приведу список самых
 				| интересных задач и проектов, которые были разработаны мной с нуля.
+		each portfolioItem in portfolioItems
+			+portfolioItem(portfolioItem)

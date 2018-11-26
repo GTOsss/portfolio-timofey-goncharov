@@ -1,0 +1,31 @@
+include label-text
+
+mixin portfolioItem(params)
+	-
+		var defaultParams = {
+			title: '',
+			goal: '',
+			myWork: '',
+			technology: '',
+			result: '',
+			images: []
+		};
+		var config = Object.assign({}, defaultParams, params);
+	.portfolio-item
+		h2.portfolio-item__title
+			| #{config.title}
+		if config.goal
+			+labelText({ label: 'Задача: ' })
+				| #{config.goal}
+		if config.myWork
+			+labelText({ label: 'Моя работа: ' })
+				| #{config.myWork}
+		if config.technology
+			+labelText({ label: 'Технологии: ' })
+				| #{config.technology}
+		if config.result
+			+labelText({ label: 'Результат: ' })
+				| #{config.result}
+		if config.images.length
+			each imageUrl in config.images
+				img(src=imageUrl)
