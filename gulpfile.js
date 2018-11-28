@@ -3,6 +3,7 @@ let gulpLoadPlugins = require('gulp-load-plugins');
 let yargs = require('yargs');
 let path = require('path');
 let webpackConfig = require('./webpack.config');
+let rename = require('gulp-rename');
 
 let emittyPug;
 let errorHandler;
@@ -246,6 +247,17 @@ gulp.task('scss', () => {
 		.pipe(gulp.dest('build/css'));
 });
 
+gulp.task('slick-copy-source', () => {
+	return gulp.src('node_modules/slick-carousel/**/*.{gif,woff,ttf}')
+		.pipe(rename({dirname: 'fonts'}))
+		.pipe(gulp.dest('build/css'))
+});
+
+gulp.task('foundation-icons', () => {
+  return gulp.src('src/assets/foundation-icons/**/*.{css,eot,ttf,woff,svg}')
+    .pipe(gulp.dest('build/css'))
+});
+
 gulp.task('js', () => {
 	return gulp.src(webpackConfig.entry)
 		.pipe($.plumber({
@@ -442,6 +454,8 @@ gulp.task('build', gulp.parallel(
 	'sprites:svg',
 	'pug',
 	'scss',
+	'slick-copy-source',
+	'foundation-icons',
 	'js'
 ));
 
