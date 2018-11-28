@@ -3,6 +3,9 @@ include pug/mixins/input
 include pug/mixins/checkbox
 include pug/mixins/portfolio-item
 
+append styles
+	link(rel="stylesheet" href='css/foundation-icons.css')
+
 append vars
 	-
 		var title = 'Портфолио';
@@ -29,10 +32,22 @@ block content
 			{
 				title: 'Приложение для социальной сети vk',
 				goal: 'Реализовать приложения для поиска людей по совместимости (общие группы, предпочтения музыка и тд). Необходимо было использовать api социальной сети для сбора необходимой информации и осуществления поиска.',
-				myWork: 'Имея опыт работы в разработки интерфейсов и не имея шаблона и дизайна, я выбрал React и разработал SPA приложение. Вместо back-end использовался firebase.',
+				myWork: 'Имея опыт работы в разработке интерфейсов и не имея шаблона и дизайна, я выбрал React и разработал SPA приложение. Вместо back-end использовался firebase.',
 				technology: 'JavaScript, HTML, scss, webpack, React, React-redux (thunk), react-router, redux-form, axios, firebase',
 				result: 'Было разработано оптимизированное приложение с красивым и понятным интерфейсом',
-				images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ]
+				images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ],
+				sliderClassName: 'slider-vk-app',
+				wrapId: 'sliderVKApp'
+			},
+			{
+				title: 'Приложение для организации зерноперевозок по россии',
+				goal: 'Заказчик хотел автоматизировать процессы его бизнеса и предоставить удобство своим клиентам. Основной задачей было создание сервиса в котором владелец грузового транспорта мог создать акаунт, выложить данные о себе и искать работодателя. Каждый пользователь должен был иметь возможность выводить на карту маркер сигнализирующий о готовности брать груз. Так же необходимо было предусмотреть админку с возможностью проверки всех аккаунтов и данных пользователей (документы, данные о транспорте и тд).',
+				myWork: 'Я взял на себя всю работу связанную с front-end. Мой напарник разработал rest full api на node js использую mongodb в качестве базы данных.\n',
+				technology: 'JavaScript, HTML, scss, webpack, React, React-redux (thunk), react-router, redux-form, axios',
+				result: 'В результате заказчик получил работающий сервис, который избавил его от бесконечных звонков, а его клиенты получили возможность легко и быстро находить работодателей.',
+				images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ],
+				sliderClassName: 'slider-zernoport',
+				wrapId: 'sliderZernoport'
 			}
 		];
 	section.section-info
