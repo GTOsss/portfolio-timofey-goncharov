@@ -1,0 +1,16 @@
+mixin slider(params)
+	-
+		var defaultParams = {
+			images: [],
+			className: 'slider',
+			wrapId: ''
+		};
+		var config = Object.assign({}, defaultParams, params);
+
+	.slider-container
+		.slider-wrap(id=config.wrapId)
+			button.slider-wrap__button-transparent
+				i.fi-arrows-out.icon-resize
+			div(class=config.className)
+				each imageUrl in config.images
+					img(src=imageUrl)
