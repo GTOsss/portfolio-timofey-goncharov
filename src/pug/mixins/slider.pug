@@ -2,15 +2,16 @@ mixin slider(params)
 	-
 		var defaultParams = {
 			images: [],
-			className: 'slider',
-			wrapId: ''
+			sliderClassName: 'slider',
+			wrapClassName: 'slider-wrap',
+			slickClassName: 'slider-slick-portfolio-item'
 		};
 		var config = Object.assign({}, defaultParams, params);
 
 	.slider-container
-		.slider-wrap(id=config.wrapId)
-			button.slider-wrap__button-transparent
+		div(class=`${config.wrapClassName}`)
+			button.slider-wrap__button-transparent.button-resize-slider
 				i.fi-arrows-out.icon-resize
-			div(class=config.className)
+			div(class=config.slickClassName)
 				each imageUrl in config.images
 					img(src=imageUrl)

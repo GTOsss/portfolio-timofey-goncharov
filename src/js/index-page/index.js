@@ -1,9 +1,11 @@
+import 'slick-carousel';
 import {ResizeObserver, ScrollRevealObserver} from '../utils/observers/index';
 import jsLevelScale from './js-level-scale';
 import jsLevelCounter from './js-level-counter';
 import infoInputs from './info-inputs';
 import infoStamp from './info-stamp';
 import skills from './skills';
+import portfolioSliders from './portfolio-sliders';
 
 $(document).ready(() => {
 	const $window = $(window);
@@ -15,4 +17,5 @@ $(document).ready(() => {
 	jsLevelScale($window, resizeObserver, scrollRevealObserver);
 	jsLevelCounter($window, resizeObserver, scrollRevealObserver);
 	skills($window, resizeObserver, scrollRevealObserver);
+  portfolioSliders();
 });

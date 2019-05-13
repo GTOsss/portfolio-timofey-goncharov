@@ -10,8 +10,6 @@ mixin portfolioItem(params)
 			technology: '',
 			result: '',
 			images: [],
-			sliderClassName: 'slider',
-			wrapId: ''
 		};
 		var config = Object.assign({}, defaultParams, params);
 	.portfolio-item
@@ -30,4 +28,4 @@ mixin portfolioItem(params)
 			+labelText({ label: 'Результат: ' })
 				| #{config.result}
 	if config.images.length
-		+slider({ images: config.images, className: config.sliderClassName, wrapId: config.wrapId })
+		+slider({ images: config.images })
