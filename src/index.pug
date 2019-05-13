@@ -29,6 +29,46 @@ block content
 			'git-flow'
 		];
 		var portfolioItems = [
+			// {
+			// 	title: '',
+			// 	goal: '',
+			// 	myWork: '',
+			// 	technology: 'JavaScript, webpack, pug, scss',
+			// 	result: '',
+			// 	images: [ 'images/portfolio/brior/brior1.png', 'images/portfolio/brior/brior2.png', 'images/portfolio/brior/brior3.png', 'images/portfolio/brior/brior4.png', 'images/portfolio/brior/brior5.png', 'images/portfolio/brior/brior6.png' ],
+			// },
+			{
+				title: 'Криптовалютная биржа',
+				goal: 'Заказчику требовалось разработать фронт-енд для криптовалютной биржы без бэк-енда и без интеграций api.',
+				myWork: 'Разработка фронт-енда в команде из 2-х человек (второй мой доверенный напарник приглашенный мною по моей инициативе)',
+				technology: 'JavaScript (ES 6), angular 6, scss',
+				result: 'Был разработан адаптивный фронт-енд с максимальным сходством дизайна, по срокам уложились в 1 месяц и 1 неделю.',
+				images: [ 'images/portfolio/crypto/crypto1.png', 'images/portfolio/crypto/crypto2.png', 'images/portfolio/crypto/crypto3.png', 'images/portfolio/crypto/crypto4.png', 'images/portfolio/crypto/crypto5.png', 'images/portfolio/crypto/crypto6.png', 'images/portfolio/crypto/crypto7.png', 'images/portfolio/crypto/crypto8.png' ],
+			},
+			{
+				title: 'Stocity. Сервис объединяющий автомастерские и автомаганизы.',
+				goal: 'Разработат сервис в котором сможет зарегистрироваться 3 типа пользователей: клиент (владелец авто), автомагазин, автомастерская. Сервис должен хранить заявки поступившие от клиента с целью передачи их мастерской или автомагазину.',
+				myWork: 'Разработка front-end на React js с нуля (архитектура проекта, конфигурация webpack для dev-режима и prod-режима). ',
+				technology: 'JavaScript (ES6), webpack, React js, scss, react-router, react-redux, redux-thunk, react-intl и другие модули облегчающие работу с SPA',
+				result: 'За 5 месяцев был разработан работающий сервис.',
+				images: [ 'images/portfolio/sto-city/stocity1.png', 'images/portfolio/sto-city/stocity2.png', 'images/portfolio/sto-city/stocity3.png', 'images/portfolio/sto-city/stocity4.png', 'images/portfolio/sto-city/stocity5.png', 'images/portfolio/sto-city/stocity6.png' ],
+			},
+			{
+				title: 'Brior корпоративный сайт',
+				goal: 'Разработать корпортивный сайт для компании Brior. По запросу заказчика необходимо было для получения некоторых данных связать фронт-енд с node js и mongo db: новости, открытые вакансии и т.д. ',
+				myWork: 'Мне потребовалось 4 дня что бы все сверстать и подготовить фронт-енд для связи с бэк-ендом. Бэк-енд разрабатывал мой напарник.',
+				technology: 'JavaScript, webpack, pug, scss',
+				result: 'В результате заказчик получил адаптивный сайт с pixel perfect совпадением дизайна.',
+				images: [ 'images/portfolio/brior/brior1.png', 'images/portfolio/brior/brior2.png', 'images/portfolio/brior/brior3.png', 'images/portfolio/brior/brior4.png', 'images/portfolio/brior/brior5.png', 'images/portfolio/brior/brior6.png' ],
+			},
+			{
+				title: 'Интернет магазин lilubags.store',
+				goal: 'Разработать интернет магазин с базовым функционалом.',
+				myWork: 'Работая командой составом из 3-х человек (мой доверенный напарник бэк-енд разработчик и дизайнер) мы разработали техническое задание, прототип, дизайн, фронт енд с админ панелью и бэк-енд. ',
+				technology: 'JavaScript, jquery, webpack, pug, scss, node-js, postgres sql, express.',
+				result: 'В результате был разработан сайт принимаюащий заявки и сохраняющий их в собственную базу данных, админка с возможность импортить и изменять товар, раздел админки для просмотра заявок по анологии с битрикс 24.',
+				images: [ 'images/portfolio/lilubags/lilubags1.png', 'images/portfolio/lilubags/lilubags2.png', 'images/portfolio/lilubags/lilubags3.png' ],
+			},
 			{
 				title: 'Приложение для социальной сети vk',
 				goal: 'Реализовать приложения для поиска людей по совместимости (общие группы, предпочтения музыка и тд). Необходимо было использовать api социальной сети для сбора необходимой информации и осуществления поиска.',
@@ -36,8 +76,22 @@ block content
 				technology: 'JavaScript, HTML, scss, webpack, React, React-redux (thunk), react-router, redux-form, axios, firebase',
 				result: 'Было разработано оптимизированное приложение с красивым и понятным интерфейсом',
 				images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ],
-				sliderClassName: 'slider-vk-app',
-				wrapId: 'sliderVKApp'
+			},
+			{
+				title: 'Страница реализующая криптовалютные транзакции через Trezor и MetaMask',
+				goal: 'Сверстать страницу для реализации криптовалютных транзакций и интегрировать API Trezor и MetaMask.',
+				myWork: 'Верстка и логика реализующая транзакции.',
+				technology: 'JavaScript, React js, webspack, Web3, Trezor API, MetaMask API.',
+				result: 'Используя совершенно новые для меня инструменты и никогда не сталкиваясь с криптовалютой, мне удалось выполнить поставленные задачи.',
+				images: [ 'images/portfolio/crypto-payment/crypto-payment0.png', 'images/portfolio/crypto-payment/crypto-payment2.png',  'images/portfolio/crypto-payment/crypto-payment1.png'],
+			},
+			{
+				title: 'Канбан-доска.',
+				goal: 'Разработать канбан-доску с красивым интерфейсом и плавным drag-and-drop эффектом.',
+				myWork: 'Используя react, готовое rest api и несколько npm модулей разработать канбан-доску для внутреннего проекта, реализующего анологичный функционал Jira и Trello.',
+				technology: 'JavaScript, webpack, pug, scss',
+				result: 'В результате получилась канбан-доска в возможностью перетаскивания тасков в разные колонки дополнительно объединяя их в соотвествующие группы. Так же была реализована поддержка настройки темы (цвет колонок, цвет фона, фоновое изображение).',
+				images: [ 'images/portfolio/task-board/task-board1.jpg', 'images/portfolio/task-board/task-board2.png', ],
 			},
 			{
 				title: 'Приложение для организации зерноперевозок по россии',
@@ -45,20 +99,16 @@ block content
 				myWork: 'Я взял на себя всю работу связанную с front-end. Мой напарник разработал rest full api на node js использую mongodb в качестве базы данных.',
 				technology: 'JavaScript, HTML, scss, webpack, React, React-redux (thunk), react-router, redux-form, axios',
 				result: 'В результате заказчик получил работающий сервис, который избавил его от бесконечных звонков, а его клиенты получили возможность легко и быстро находить работодателей.',
-				images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ],
-				sliderClassName: 'slider-zernoport',
-				wrapId: 'sliderZernoport'
+				// images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ],
 			},
 			{
-				title: 'Brior корпоративный сайт',
-				goal: 'Разработать корпортивный сайт для компании Brior. По запросу заказчика необходимо было для получения некоторых данных связать фронт-енд с node js и mongo db: новости, открытые вакансии и т.д. ',
-				myWork: 'Мне потребовалось 3 дня что бы все сверстать и подготовить фронт-енд для связи с бэк-ендом.',
-				technology: 'JavaScript, webpack, pug, scss',
-				result: 'В результате заказчик получил адаптивный сайт с pixel perfect совпадением дизайна.',
-				images: [ 'images/portfolio/brior/brior1.png', 'images/portfolio/brior/brior2.png', 'images/portfolio/brior/brior3.png', 'images/portfolio/brior/brior4.png', 'images/portfolio/brior/brior5.png', 'images/portfolio/brior/brior6.png' ],
-				sliderClassName: 'slider-zernoport',
-				wrapId: 'sliderBrior'
-			}
+				title: 'В завершении хотел бы добавить что это не все проекты с которыми мне приходилось работать.',
+				// goal: 'Заказчик хотел автоматизировать процессы его бизнеса и предоставить удобство своим клиентам. Основной задачей было создание сервиса в котором владелец грузового транспорта мог создать акаунт, выложить данные о себе и искать работодателя. Каждый пользователь должен был иметь возможность выводить на карту маркер сигнализирующий о готовности брать груз. Так же необходимо было предусмотреть админку с возможностью проверки всех аккаунтов и данных пользователей (документы, данные о транспорте и тд).',
+				// myWork: 'Я взял на себя всю работу связанную с front-end. Мой напарник разработал rest full api на node js использую mongodb в качестве базы данных.',
+				// technology: 'JavaScript, HTML, scss, webpack, React, React-redux (thunk), react-router, redux-form, axios',
+				// result: 'В результате заказчик получил работающий сервис, который избавил его от бесконечных звонков, а его клиенты получили возможность легко и быстро находить работодателей.',
+				// images: [ 'images/portfolio/vk-app/vk-app1.png', 'images/portfolio/vk-app/vk-app2.png', 'images/portfolio/vk-app/vk-app3.png', 'images/portfolio/vk-app/vk-app4.png' ],
+			},
 		];
 	section.section-info
 		.paper-card-info

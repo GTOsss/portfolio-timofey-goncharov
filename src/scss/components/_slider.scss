@@ -231,6 +231,12 @@ $slick-opacity-not-active: 0.25 !default;
 	}
 }
 
+.button-resize-slider {
+	@media screen and (max-width: 820px) {
+		display: none;
+	}
+}
+
 .icon-resize {
 	display: block;
 	padding: 5px 10px;
